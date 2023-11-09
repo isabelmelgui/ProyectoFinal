@@ -101,4 +101,3 @@ st.audio(audio_bytes, format='audio/ogg')
 # Generate a 440 Hz sine wave
 #note_la = np.sin(frequency_la * t * 2 * np.pi)
 
-st.audio(note_la, sample_rate=sample_rate)
