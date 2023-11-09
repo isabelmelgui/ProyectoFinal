@@ -90,6 +90,6 @@ if result:
 audio_file = open('Dance.mp3', 'rb')
 audio_bytes = audio_file.read()
 
-st.buttom= ("Escuchar Audio", st.audio(audio_bytes, format='audio/ogg'))
+st.button= ("Escuchar Audio", st.audio(audio_bytes, format='audio/ogg'))
 
 
