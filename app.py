@@ -90,6 +90,6 @@ if result:
 audio_file = open('Dance.mp3', 'rb')
 audio_bytes = audio_file.read()
 
-st.audio(audio_bytes, format='audio/ogg')
+st.button= st.audio(audio_bytes, format='audio/ogg')
 
 
