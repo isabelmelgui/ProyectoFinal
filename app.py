@@ -113,13 +113,13 @@ with st.expander('Analizar texto'):
         st.write('Subjectivity: ', round(blob.sentiment.subjectivity,2))
         x=round(blob.sentiment.polarity,2)
         if x >= 0.5:
-            st.write( 'Es un sentimiento Positivo 😊')
+            st.write( 'Es un sentimiento Positivo, aquí tienes musica feliz 😊')
             st.audio(audio_bytes, format='audio/ogg')
         elif x <= -0.5:
-            st.write( 'Es un sentimiento Negativo 😔')
+            st.write( 'Es un sentimiento Negativo, Aquí tienes musica relajante 😔')
             st.audio(audio_bytes_sad, format='audio/ogg')
         else:
-            st.write( 'Es un sentimiento Neutral 😐')
+            st.write( 'Es un sentimiento Neutral, aquí tienes música para que te animes 😐')
             st.audio(audio_bytes_Neutral, format='audio/ogg')
 
 
