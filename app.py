@@ -10,7 +10,12 @@ import paho.mqtt.client as paho
 import json
 from gtts import gTTS
 from googletrans import Translator
+#Audio
 import numpy as np
+#Analisis de sentimiento
+from textblob import TextBlob
+import pandas as pd
+from googletrans import Translator
 
 def on_publish(client,userdata,result):             #create function for callback
     print("el dato ha sido publicado \n")
@@ -90,6 +95,7 @@ if result:
 audio_file = open('Dance.mp3', 'rb')
 audio_bytes = audio_file.read()
 
+translator = Translator()
 with st.expander('Analizar texto'):
     text = st.text_input('Escribe por favor: ')
     if text:
