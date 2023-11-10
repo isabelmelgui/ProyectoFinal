@@ -95,6 +95,12 @@ if result:
 audio_file = open('Dance.mp3', 'rb')
 audio_bytes = audio_file.read()
 
+audio_file_sad = open('Nocturne.mp3', 'rb')
+audio_bytes_sad = audio_file_sad.read()
+
+audio_file_Neutral = open('Thank.mp3', 'rb')
+audio_bytes_Neutral = audio_file_Neutral.read()
+
 translator = Translator()
 with st.expander('Analizar texto'):
     text = st.text_input('Escribe por favor: ')
@@ -111,8 +117,10 @@ with st.expander('Analizar texto'):
             st.audio(audio_bytes, format='audio/ogg')
         elif x <= -0.5:
             st.write( 'Es un sentimiento Negativo 😔')
+            st.audio(audio_bytes_sad, format='audio/ogg')
         else:
             st.write( 'Es un sentimiento Neutral 😐')
+            st.audio(audio_bytes_Neutral, format='audio/ogg')
 
 
 
