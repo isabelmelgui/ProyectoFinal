@@ -90,7 +90,7 @@ if result:
         pass
         
 
-#Boton de sonido
+#Audio
 
 audio_file = open('Dance.mp3', 'rb')
 audio_bytes = audio_file.read()
