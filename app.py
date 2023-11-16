@@ -39,7 +39,7 @@ st.subheader("Controla tu espejo por voz")
 
 image = Image.open('EspejoMagico.jpg')
 
-st.image(image, width=300)
+st.image(image, width=350)
 
 
 
