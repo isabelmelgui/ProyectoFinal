@@ -89,7 +89,7 @@ if result:
     except:
         pass
         
-st.subheader("Pon música según tu estado de ánimo")
+st.subheader(":violet[Pon música según tu estado de ánimo]")
 #Audio
 
 audio_file = open('Dance.mp3', 'rb')
