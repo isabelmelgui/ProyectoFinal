@@ -34,8 +34,8 @@ client1.on_message = on_message
 
 
 
-st.title("Interfaces Multimodales")
-st.subheader("CONTROL POR VOZ")
+st.title("Espejo mágico App")
+st.subheader("Controla tu espejo por voz")
 
 image = Image.open('voice_ctrl.jpg')
 
