@@ -89,7 +89,7 @@ if result:
     except:
         pass
         
-
+st.subheader("Pon música según tu estado de ánimo")
 #Audio
 
 audio_file = open('Dance.mp3', 'rb')
@@ -102,7 +102,7 @@ audio_file_Neutral = open('Thank.mp3', 'rb')
 audio_bytes_Neutral = audio_file_Neutral.read()
 
 translator = Translator()
-with st.expander('Analizar texto'):
+with st.expander('Analizar sentimiento'):
     text = st.text_input('Escribe por favor: ')
     if text:
 
