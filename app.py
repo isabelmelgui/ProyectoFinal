@@ -34,7 +34,7 @@ client1.on_message = on_message
 
 
 
-st.title(blue[Espejo mágico App])
+st.title("blue[Espejo mágico App]")
 st.subheader("Controla tu espejo por voz")
 
 image = Image.open('EspejoMagico.jpg')
